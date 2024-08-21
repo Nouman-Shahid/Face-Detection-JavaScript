@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>Face-Detection</title>
   <script defer src="face-api.min.js"></script>
   <script defer src="script.js"></script>
   <style>
@@ -16,14 +17,25 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      flex-direction: column;
     }
 
     canvas {
       position: absolute;
     }
+
+    #message {
+      font-size: 5vh;
+      color: white;
+      position: absolute;
+      top: 20vh;
+    }
   </style>
 </head>
+
 <body>
   <video id="video" width="720" height="560" autoplay muted></video>
+  <div id="message"></div>
 </body>
+
 </html>
